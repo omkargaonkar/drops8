@@ -12,6 +12,7 @@ dependencies:
   - toolbar
   - image
   - views
+  - field_ui
   - config_update
 themes:
   - zurb_foundation
