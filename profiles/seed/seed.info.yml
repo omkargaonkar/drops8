@@ -13,6 +13,7 @@ dependencies:
   - image
   - views
   - config_update
-
 themes:
-  - stark
+  - zurb_foundation
+  - adminimal_theme
+  - seed_zurb
