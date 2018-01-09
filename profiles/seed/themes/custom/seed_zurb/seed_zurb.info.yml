@@ -1,0 +1,29 @@
+name: SEED ZURB
+description: "seed_zurb is a subtheme created by zurb foundation."
+core: 8.x
+type: theme
+base theme: zurb_foundation
+
+# Image appears on admin/appearance
+# screenshot: images/screenshot.jpg
+
+# Uncomment these lines and change "STARTER" to your theme name if you
+# need to add custom CSS or JS
+libraries:
+ - seed_zurb/global
+# Regions are output in the page.html.twig
+regions:
+  header: 'Header'
+  placard: 'Playcard'
+  content: 'Content'
+  sidebar_first:  'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_first: 'Footer'
+
+features:
+  - logo
+  - name
+  - slogan
+  - favicon
+  - comment_user_picture
+  - node_user_picture
