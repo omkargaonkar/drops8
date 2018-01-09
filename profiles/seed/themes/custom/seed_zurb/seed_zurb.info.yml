@@ -1,5 +1,5 @@
-name: SEED ZURB
-description: "seed_zurb is a subtheme created by zurb foundation."
+name: Seed Zurb
+description: "Default theme used for Seed platform based on Zurb Foundation framework."
 core: 8.x
 type: theme
 base theme: zurb_foundation
