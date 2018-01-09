@@ -1,0 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/custom.css: {}
+      css/imagehover.min.css: {}
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/drupal
+    
