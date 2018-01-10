@@ -13,6 +13,7 @@ dependencies:
   - image
   - views
   - config_update
+  - editor
 themes:
   - zurb_foundation
   - adminimal_theme
