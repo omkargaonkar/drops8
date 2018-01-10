@@ -6,7 +6,6 @@ label: Manager
 weight: 2
 is_admin: null
 permissions:
-permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access files overview'
