@@ -38,7 +38,6 @@ function seed_install() {
   // Allow authenticated users to use shortcuts.
   user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access shortcuts'));
 
-
   // Set admin theme.
   $admin_theme = 'adminimal_theme';
   \Drupal::configFactory()->getEditable('system.theme')->set('admin', $admin_theme)->save();
@@ -52,5 +51,4 @@ function seed_install() {
   // Set default theme.
   $default_theme = 'seed_zurb';
   \Drupal::configFactory()->getEditable('system.theme')->set('default', $default_theme)->save();
-
 }
