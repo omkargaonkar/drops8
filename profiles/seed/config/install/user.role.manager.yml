@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: Manager
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer users'
+  - 'bypass node access'
+  - 'delete all revisions'
+  - 'link to any page'
+  - 'revert all revisions'
