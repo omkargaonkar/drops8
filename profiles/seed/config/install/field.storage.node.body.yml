@@ -4,8 +4,10 @@ dependencies:
   module:
     - node
     - text
-id: node.field_body
-field_name: field_body
+_core:
+  default_config_hash: crfI_01FfzWecsk2ZCiIZKi_tkgS8lYHFHoIPqYrRhk
+id: node.body
+field_name: body
 entity_type: node
 type: text_long
 settings: {  }
@@ -14,5 +16,5 @@ locked: false
 cardinality: 1
 translatable: true
 indexes: {  }
-persist_with_no_fields: false
+persist_with_no_fields: true
 custom_storage: false
