@@ -6,6 +6,7 @@ label: Manager
 weight: 2
 is_admin: null
 permissions:
+permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access files overview'
@@ -26,3 +27,6 @@ permissions:
   - 'delete all revisions'
   - 'link to any page'
   - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'
