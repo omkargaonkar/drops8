@@ -17,7 +17,6 @@ permissions:
   - 'link to any page'
   - 'revert all revisions'
   - 'use text format basic_html'
-  - 'use text format full_html'
   - 'use text format restricted_html'
   - 'view all revisions'
   - 'view own unpublished content'
