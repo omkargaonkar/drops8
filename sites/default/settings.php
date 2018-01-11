@@ -23,10 +23,14 @@ include __DIR__ . "/settings.pantheon.php";
 /**
  * Determine this is preproduction pantheon environment.
  */
- if (isset($_ENV['PANTHEON_ENVIRONMENT']) && ($_ENV['PANTHEON_ENVIRONMENT'] != 'live' && $_ENV['PANTHEON_ENVIRONMENT'] != 'test')) {
-   $pantheon_services_file = __DIR__ . '/services.pantheon.production.yml';
-   include __DIR__ . "/settings.dev_pantheon.php";
- }
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && ($_ENV['PANTHEON_ENVIRONMENT'] != 'live' && $_ENV['PANTHEON_ENVIRONMENT'] != 'test')) {
+  $pantheon_services_file = __DIR__ . '/services.pantheon.preproduction.yml';
+  if (file_exists($pantheon_services_file)) {
+    $settings['container_yamls'][] = $pantheon_services_file;
+  }
+  // Include pantheon configurations for preproduction environments.
+  include __DIR__ . "/settings.dev_pantheon.php";
+}
 
 /**
  * If there is a local settings file, then include it.
