@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: page_content_pattern
+label: 'Page Content Pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  e31c2d14-205c-4f38-b8ca-992b88e4324c:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e31c2d14-205c-4f38-b8ca-992b88e4324c
+selection_logic: and
+weight: -5
+relationships: {  }
