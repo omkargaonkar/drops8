@@ -52,8 +52,9 @@ $settings['cache']['bins']['discovery_migration'] = 'cache.backend.memory';
  * Note: you should test with Dynamic Page Cache enabled, to ensure the correct
  * cacheability metadata is present (and hence the expected behavior). However,
  * in the early stages of development, you may want to disable it.
+ * TODO : Need investigation. Enabling this breaks installation on pantheon.
  */
-$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
  * Allow test modules and themes to be installed.
