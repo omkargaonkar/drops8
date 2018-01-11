@@ -27,6 +27,7 @@ dependencies:
   - pathauto
   - token
   - xmlsitemap
+  - email_registration
 themes:
   - zurb_foundation
   - adminimal_theme
