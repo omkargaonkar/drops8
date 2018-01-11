@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: MV3SNvmjxxNK6ZnuXLNvasS4oi2IQey9Oq8xM7w--ok
 id: manager
 label: Manager
 weight: 2
@@ -13,15 +15,20 @@ permissions:
   - 'access site reports'
   - 'access toolbar'
   - 'access user profiles'
+  - 'add JS snippets for google analytics'
   - 'administer blocks'
   - 'administer filters'
+  - 'administer font entities'
+  - 'administer google analytics'
   - 'administer image styles'
   - 'administer menu'
+  - 'administer meta tags'
   - 'administer nodes'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer themes'
   - 'administer users'
+  - 'administer xmlsitemap'
   - 'bypass node access'
   - 'create page content'
   - 'delete all revisions'
@@ -30,6 +37,7 @@ permissions:
   - 'edit any page content'
   - 'edit own page content'
   - 'link to any page'
+  - 'opt-in or out of google analytics tracking'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'view all revisions'
