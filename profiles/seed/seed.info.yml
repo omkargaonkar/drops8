@@ -15,6 +15,7 @@ dependencies:
   - config_update
   - admin_toolbar
   - adminimal_admin_toolbar
+  - admin_toolbar_links_access_filter
   - ctools
   - google_fonts_api
   - fontyourface
