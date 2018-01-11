@@ -2,43 +2,8 @@
 
 /**
  * @file
- * Local development override configuration feature.
- *
- * To activate this feature, copy and rename it such that its path plus
- * filename is 'sites/default/settings.local.php'.
+ * Pantheon preproduction environment override configuration feature.
  */
-
-/**
- * Default databse configurations.
- */
-$databases['default']['default'] = array(
-  'database' => '????',
-  'username' => '????',
-  'password' => '????',
-  'host' => 'localhost',
-  'driver' => 'mysql',
-  'port' => 3306,
-  'prefix' => '',
-);
-
-/**
- * Assertions.
- *
- * The Drupal project primarily uses runtime assertions to enforce the
- * expectations of the API by failing when incorrect calls are made by code
- * under development.
- *
- * @see http://php.net/assert
- * @see https://www.drupal.org/node/2492225
- *
- * If you are using PHP 7.0 it is strongly recommended that you set
- * zend.assertions=1 in the PHP.ini file (It cannot be changed from .htaccess
- * or runtime) on development machines and to 0 in production.
- *
- * @see https://wiki.php.net/rfc/expectations
- */
-assert_options(ASSERT_ACTIVE, TRUE);
-\Drupal\Component\Assertion\Handle::register();
 
 /**
  * Enable local development services.
