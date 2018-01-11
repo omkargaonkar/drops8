@@ -14,6 +14,9 @@ dependencies:
   - views
   - field_ui
   - config_update
+  - editor
+  - ckeditor
+  - quickedit
 themes:
   - zurb_foundation
   - adminimal_theme

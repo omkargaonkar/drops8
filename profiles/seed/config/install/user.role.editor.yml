@@ -20,6 +20,8 @@ permissions:
   - 'edit any page content'
   - 'edit own page content'
   - 'link to any page'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'view all revisions'
