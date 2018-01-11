@@ -9,11 +9,20 @@ dependencies:
   - dblog
   - page_cache
   - dynamic_page_cache
-  - toolbar
   - image
   - views
   - field_ui
   - config_update
+  - admin_toolbar
+  - adminimal_admin_toolbar
+  - ctools
+  - google_fonts_api
+  - fontyourface
+  - google_analytics
+  - metatag
+  - pathauto
+  - token
+  - xmlsitemap
 themes:
   - zurb_foundation
   - adminimal_theme
