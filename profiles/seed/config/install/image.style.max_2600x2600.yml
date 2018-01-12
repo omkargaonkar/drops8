@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+name: max_2600x2600
+label: 'Max 2600x2600'
+effects:
+  c70f2342-fde9-4661-b1e6-d56de45fa78e:
+    uuid: c70f2342-fde9-4661-b1e6-d56de45fa78e
+    id: image_scale
+    weight: 1
+    data:
+      width: 2600
+      height: 2600
+      upscale: false
+
