@@ -2232,13 +2232,13 @@ h6, .h6 {
 /* line 371, ../scss/typography/_base.scss */
 a {
   line-height: inherit;
-  color: #1779ba;
+  color: #6373fb;
   text-decoration: none;
   cursor: pointer;
 }
 /* line 378, ../scss/typography/_base.scss */
 a:hover, a:focus {
-  color: #1468a0;
+  color: #3348fa;
 }
 /* line 386, ../scss/typography/_base.scss */
 a img {
@@ -2885,7 +2885,7 @@ select[multiple] {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #1779ba;
+  background-color: #6373fb;
   color: #fefefe;
 }
 /* line 202, ../scss/util/_mixins.scss */
@@ -2894,7 +2894,7 @@ select[multiple] {
 }
 /* line 153, ../scss/components/_button.scss */
 .button:hover, .button:focus {
-  background-color: #14679e;
+  background-color: #3045fa;
   color: #fefefe;
 }
 /* line 271, ../scss/components/_button.scss */
@@ -2918,13 +2918,13 @@ select[multiple] {
 }
 /* line 304, ../scss/components/_button.scss */
 .button.primary {
-  background-color: #1779ba;
-  color: #fefefe;
+  background-color: #6373fb;
+  color: #0a0a0a;
 }
 /* line 153, ../scss/components/_button.scss */
 .button.primary:hover, .button.primary:focus {
-  background-color: #126195;
-  color: #fefefe;
+  background-color: #1f36f9;
+  color: #0a0a0a;
 }
 /* line 304, ../scss/components/_button.scss */
 .button.secondary {
@@ -2973,7 +2973,7 @@ select[multiple] {
 }
 /* line 211, ../scss/components/_button.scss */
 .button.disabled, .button.disabled:hover, .button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #1779ba;
+  background-color: #6373fb;
   color: #fefefe;
 }
 /* line 325, ../scss/components/_button.scss */
@@ -2983,8 +2983,8 @@ select[multiple] {
 }
 /* line 211, ../scss/components/_button.scss */
 .button.disabled.primary, .button.disabled.primary:hover, .button.disabled.primary:focus, .button[disabled].primary, .button[disabled].primary:hover, .button[disabled].primary:focus {
-  background-color: #1779ba;
-  color: #fefefe;
+  background-color: #6373fb;
+  color: #0a0a0a;
 }
 /* line 325, ../scss/components/_button.scss */
 .button.disabled.secondary, .button[disabled].secondary {
@@ -3028,8 +3028,8 @@ select[multiple] {
 }
 /* line 333, ../scss/components/_button.scss */
 .button.hollow {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 161, ../scss/components/_button.scss */
 .button.hollow, .button.hollow:hover, .button.hollow:focus {
@@ -3041,28 +3041,28 @@ select[multiple] {
 }
 /* line 186, ../scss/components/_button.scss */
 .button.hollow:hover, .button.hollow:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #0416ab;
+  color: #0416ab;
 }
 /* line 189, ../scss/components/_button.scss */
 .button.hollow:hover.disabled, .button.hollow:hover[disabled], .button.hollow:focus.disabled, .button.hollow:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 338, ../scss/components/_button.scss */
 .button.hollow.primary {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 186, ../scss/components/_button.scss */
 .button.hollow.primary:hover, .button.hollow.primary:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #0416ab;
+  color: #0416ab;
 }
 /* line 189, ../scss/components/_button.scss */
 .button.hollow.primary:hover.disabled, .button.hollow.primary:hover[disabled], .button.hollow.primary:focus.disabled, .button.hollow.primary:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 338, ../scss/components/_button.scss */
 .button.hollow.secondary {
@@ -3126,8 +3126,8 @@ select[multiple] {
 }
 /* line 347, ../scss/components/_button.scss */
 .button.clear {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 161, ../scss/components/_button.scss */
 .button.clear, .button.clear:hover, .button.clear:focus {
@@ -3139,13 +3139,13 @@ select[multiple] {
 }
 /* line 186, ../scss/components/_button.scss */
 .button.clear:hover, .button.clear:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #0416ab;
+  color: #0416ab;
 }
 /* line 189, ../scss/components/_button.scss */
 .button.clear:hover.disabled, .button.clear:hover[disabled], .button.clear:focus.disabled, .button.clear:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 352, ../scss/components/_button.scss */
 .button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear:hover, .button.clear:hover.disabled, .button.clear:hover[disabled], .button.clear:focus, .button.clear:focus.disabled, .button.clear:focus[disabled] {
@@ -3153,18 +3153,18 @@ select[multiple] {
 }
 /* line 358, ../scss/components/_button.scss */
 .button.clear.primary {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 186, ../scss/components/_button.scss */
 .button.clear.primary:hover, .button.clear.primary:focus {
-  border-color: #0c3d5d;
-  color: #0c3d5d;
+  border-color: #0416ab;
+  color: #0416ab;
 }
 /* line 189, ../scss/components/_button.scss */
 .button.clear.primary:hover.disabled, .button.clear.primary:hover[disabled], .button.clear.primary:focus.disabled, .button.clear.primary:focus[disabled] {
-  border: 1px solid #1779ba;
-  color: #1779ba;
+  border: 1px solid #6373fb;
+  color: #6373fb;
 }
 /* line 363, ../scss/components/_button.scss */
 .button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary:hover, .button.clear.primary:hover.disabled, .button.clear.primary:hover[disabled], .button.clear.primary:focus, .button.clear.primary:focus.disabled, .button.clear.primary:focus[disabled] {
@@ -3264,11 +3264,11 @@ select[multiple] {
 }
 /* line 385, ../scss/components/_button.scss */
 .button.dropdown.hollow::after {
-  border-top-color: #1779ba;
+  border-top-color: #6373fb;
 }
 /* line 391, ../scss/components/_button.scss */
 .button.dropdown.hollow.primary::after {
-  border-top-color: #1779ba;
+  border-top-color: #6373fb;
 }
 /* line 391, ../scss/components/_button.scss */
 .button.dropdown.hollow.secondary::after {
@@ -3327,7 +3327,7 @@ a.button:hover, a.button:focus {
   border-bottom: 0;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1779ba;
+  color: #6373fb;
 }
 /* line 93, ../scss/components/_accordion.scss */
 :last-child:not(.is-active) > .accordion-title {
@@ -3400,7 +3400,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #6373fb transparent transparent;
   position: absolute;
   top: 50%;
   margin-top: -3px;
@@ -3450,7 +3450,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #6373fb transparent transparent;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -3483,13 +3483,13 @@ a.button:hover, a.button:focus {
   border-radius: 50%;
   font-size: 0.6rem;
   text-align: center;
-  background: #1779ba;
+  background: #6373fb;
   color: #fefefe;
 }
 /* line 57, ../scss/components/_badge.scss */
 .badge.primary {
-  background: #1779ba;
-  color: #fefefe;
+  background: #6373fb;
+  color: #0a0a0a;
 }
 /* line 57, ../scss/components/_badge.scss */
 .badge.secondary {
@@ -3544,7 +3544,7 @@ a.button:hover, a.button:focus {
 }
 /* line 99, ../scss/components/_breadcrumbs.scss */
 .breadcrumbs a {
-  color: #1779ba;
+  color: #6373fb;
 }
 /* line 102, ../scss/components/_breadcrumbs.scss */
 .breadcrumbs a:hover {
@@ -3657,13 +3657,13 @@ a.button:hover, a.button:focus {
 }
 /* line 212, ../scss/components/_button-group.scss */
 .button-group.primary .button {
-  background-color: #1779ba;
-  color: #fefefe;
+  background-color: #6373fb;
+  color: #0a0a0a;
 }
 /* line 153, ../scss/components/_button.scss */
 .button-group.primary .button:hover, .button-group.primary .button:focus {
-  background-color: #126195;
-  color: #fefefe;
+  background-color: #1f36f9;
+  color: #0a0a0a;
 }
 /* line 212, ../scss/components/_button-group.scss */
 .button-group.secondary .button {
@@ -3759,7 +3759,7 @@ a.button:hover, a.button:focus {
 }
 /* line 93, ../scss/components/_callout.scss */
 .callout.primary {
-  background-color: #d7ecfa;
+  background-color: #e8eafe;
   color: #0a0a0a;
 }
 /* line 93, ../scss/components/_callout.scss */
@@ -4060,12 +4060,12 @@ a.button:hover, a.button:focus {
 }
 /* line 444, ../scss/components/_menu.scss */
 .menu .is-active > a {
-  background: #1779ba;
+  background: #6373fb;
   color: #fefefe;
 }
 /* line 450, ../scss/components/_menu.scss */
 .menu .active > a {
-  background: #1779ba;
+  background: #6373fb;
   color: #fefefe;
 }
 /* line 456, ../scss/components/_menu.scss */
@@ -4242,7 +4242,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #6373fb;
 }
 /* line 57, ../scss/components/_drilldown.scss */
 .drilldown.align-left .is-drilldown-submenu-parent > a::after {
@@ -4255,7 +4255,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #6373fb;
 }
 /* line 63, ../scss/components/_drilldown.scss */
 .drilldown.align-right .is-drilldown-submenu-parent > a::after {
@@ -4268,7 +4268,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #6373fb transparent transparent;
 }
 /* line 131, ../scss/components/_drilldown.scss */
 .drilldown .js-drilldown-back > a::before {
@@ -4279,7 +4279,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #6373fb transparent transparent;
   border-left-width: 0;
   display: inline-block;
   vertical-align: middle;
@@ -4351,7 +4351,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #1779ba transparent transparent;
+  border-color: #6373fb transparent transparent;
   right: 5px;
   left: auto;
   margin-top: -3px;
@@ -4367,7 +4367,7 @@ a.button:hover, a.button:focus {
 /* line 155, ../scss/components/_dropdown-menu.scss */
 .dropdown.menu .is-active > a {
   background: transparent;
-  color: #1779ba;
+  color: #6373fb;
 }
 /* line 160, ../scss/components/_dropdown-menu.scss */
 .no-js .dropdown.menu ul {
@@ -4408,7 +4408,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #6373fb transparent transparent;
 }
 /* line 77, ../scss/components/_dropdown-menu.scss */
 .dropdown.menu.vertical > li.opens-right > a::after {
@@ -4419,7 +4419,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #6373fb;
 }
 @media print, screen and (min-width: 40em) {
   /* line 85, ../scss/components/_dropdown-menu.scss */
@@ -4448,7 +4448,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #1779ba transparent transparent;
+    border-color: #6373fb transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px;
@@ -4483,7 +4483,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #1779ba transparent transparent;
+    border-color: transparent #6373fb transparent transparent;
   }
   /* line 77, ../scss/components/_dropdown-menu.scss */
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -4494,7 +4494,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #1779ba;
+    border-color: transparent transparent transparent #6373fb;
   }
 }
 @media print, screen and (min-width: 64em) {
@@ -4524,7 +4524,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #1779ba transparent transparent;
+    border-color: #6373fb transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px;
@@ -4559,7 +4559,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #1779ba transparent transparent;
+    border-color: transparent #6373fb transparent transparent;
   }
   /* line 77, ../scss/components/_dropdown-menu.scss */
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -4570,7 +4570,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #1779ba;
+    border-color: transparent transparent transparent #6373fb;
   }
 }
 /* line 187, ../scss/components/_dropdown-menu.scss */
@@ -4647,7 +4647,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #1779ba transparent transparent;
+  border-color: transparent #6373fb transparent transparent;
 }
 /* line 77, ../scss/components/_dropdown-menu.scss */
 .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -4658,7 +4658,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #1779ba;
+  border-color: transparent transparent transparent #6373fb;
 }
 /* line 259, ../scss/components/_dropdown-menu.scss */
 .is-dropdown-submenu .is-dropdown-submenu {
@@ -4712,13 +4712,13 @@ a.button:hover, a.button:focus {
   line-height: 1;
   white-space: nowrap;
   cursor: default;
-  background: #1779ba;
+  background: #6373fb;
   color: #fefefe;
 }
 /* line 58, ../scss/components/_label.scss */
 .label.primary {
-  background: #1779ba;
-  color: #fefefe;
+  background: #6373fb;
+  color: #0a0a0a;
 }
 /* line 58, ../scss/components/_label.scss */
 .label.secondary {
@@ -5436,7 +5436,7 @@ a.button:hover, a.button:focus {
 /* line 165, ../scss/components/_pagination.scss */
 .pagination .current {
   padding: 0.1875rem 0.625rem;
-  background: #1779ba;
+  background: #6373fb;
   color: #fefefe;
   cursor: default;
 }
@@ -5482,7 +5482,7 @@ a.button:hover, a.button:focus {
 }
 /* line 48, ../scss/components/_progress-bar.scss */
 .progress.primary .progress-meter {
-  background-color: #1779ba;
+  background-color: #6373fb;
 }
 /* line 48, ../scss/components/_progress-bar.scss */
 .progress.secondary .progress-meter {
@@ -5507,7 +5507,7 @@ a.button:hover, a.button:focus {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #1779ba;
+  background-color: #6373fb;
 }
 
 /* line 61, ../scss/components/_progress-bar.scss */
@@ -5563,7 +5563,7 @@ a.button:hover, a.button:focus {
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 0;
-  background-color: #1779ba;
+  background-color: #6373fb;
   transition: all 0.2s ease-in-out;
   touch-action: manipulation;
 }
@@ -5573,7 +5573,7 @@ a.button:hover, a.button:focus {
 }
 /* line 67, ../scss/components/_slider.scss */
 .slider-handle:hover {
-  background-color: #14679e;
+  background-color: #3045fa;
 }
 /* line 71, ../scss/components/_slider.scss */
 .slider-handle.is-dragging {
@@ -5823,7 +5823,7 @@ input + .switch-paddle {
 }
 /* line 127, ../scss/components/_switch.scss */
 input:checked ~ .switch-paddle {
-  background: #1779ba;
+  background: #6373fb;
 }
 /* line 130, ../scss/components/_switch.scss */
 input:checked ~ .switch-paddle::after {
@@ -6086,15 +6086,15 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 /* line 168, ../scss/components/_tabs.scss */
 .tabs.primary {
-  background: #1779ba;
+  background: #6373fb;
 }
 /* line 171, ../scss/components/_tabs.scss */
 .tabs.primary > li > a {
-  color: #fefefe;
+  color: #0a0a0a;
 }
 /* line 174, ../scss/components/_tabs.scss */
 .tabs.primary > li > a:hover, .tabs.primary > li > a:focus {
-  background: #1673b1;
+  background: #5264fb;
 }
 
 /* line 181, ../scss/components/_tabs.scss */
@@ -6107,17 +6107,17 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 1.25rem 1.5rem;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1779ba;
+  color: #6373fb;
 }
 /* line 100, ../scss/components/_tabs.scss */
 .tabs-title > a:hover {
   background: #fefefe;
-  color: #1468a0;
+  color: #3348fa;
 }
 /* line 105, ../scss/components/_tabs.scss */
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
   background: #e6e6e6;
-  color: #1779ba;
+  color: #6373fb;
 }
 
 /* line 185, ../scss/components/_tabs.scss */
@@ -6162,7 +6162,7 @@ a.thumbnail {
 }
 /* line 49, ../scss/components/_thumbnail.scss */
 a.thumbnail:hover, a.thumbnail:focus {
-  box-shadow: 0 0 6px 1px rgba(23, 121, 186, 0.5);
+  box-shadow: 0 0 6px 1px rgba(99, 115, 251, 0.5);
 }
 /* line 54, ../scss/components/_thumbnail.scss */
 a.thumbnail image {
@@ -6576,4 +6576,27 @@ a.thumbnail image {
 /* line 181, ../scss/util/_mixins.scss */
 .clearfix::after {
   clear: both;
+}
+
+/* line 86, ../scss/custom.scss */
+.row {
+  max-width: 100%;
+  padding-top: 5px;
+}
+
+/* line 91, ../scss/custom.scss */
+header {
+  background-color: lightgrey;
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
+
+/* line 96, ../scss/custom.scss */
+.bottom-bar {
+  border-top: 1px solid #555;
+}
+
+/* line 99, ../scss/custom.scss */
+#block-sitebranding a {
+  padding: 5px;
 }
