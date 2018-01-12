@@ -12,6 +12,7 @@ dependencies:
   - image
   - views
   - field_ui
+  - menu_ui
   - config_update
   - editor
   - ckeditor
