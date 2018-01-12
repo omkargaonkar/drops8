@@ -17,6 +17,8 @@ dependencies:
   - editor
   - ckeditor
   - quickedit
+  - responsive_image
+  - breakpoint
 themes:
   - zurb_foundation
   - adminimal_theme
