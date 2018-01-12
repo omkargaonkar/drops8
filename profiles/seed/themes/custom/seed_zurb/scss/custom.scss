@@ -82,3 +82,30 @@ $flex: false;
 
 // Older IE support
 // @import 'vendor/ie';
+
+.row {
+  max-width: 100%;
+  padding-top: 5px;
+}
+
+header {
+  background-color: $light-gray;
+  padding: 5px 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+footer,
+.bottom-bar {
+  border-top: 1px solid $medium-gray;
+  background-color: $light-gray;
+  padding: 5px 0;
+}
+
+.bottom-bar {
+  font-size: 80%;
+  text-align: center;
+}
+
+.block-sitebranding img {
+  margin-right: 10px;
+}
