@@ -14,7 +14,7 @@ libraries:
 # Regions are output in the page.html.twig
 regions:
   header: 'Header'
-  placard: 'Playcard'
+  menu_header: 'Menu Header'
   content: 'Content'
   sidebar_first:  'Sidebar first'
   sidebar_second: 'Sidebar second'
