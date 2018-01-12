@@ -89,13 +89,23 @@ $flex: false;
 }
 
 header {
-  background-color: #d3d3d3;
+  background-color: $light-gray;
   padding: 5px 0;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid $medium-gray;
 }
+
+footer,
 .bottom-bar {
-  border-top: 1px solid #555;
+  border-top: 1px solid $medium-gray;
+  background-color: $light-gray;
+  padding: 5px 0;
 }
-#block-sitebranding a {
-    padding: 5px;
+
+.bottom-bar {
+  font-size: 80%;
+  text-align: center;
+}
+
+.block-sitebranding img {
+  margin-right: 10px;
 }

@@ -6586,17 +6586,26 @@ a.thumbnail image {
 
 /* line 91, ../scss/custom.scss */
 header {
-  background-color: #d3d3d3;
+  background-color: #e6e6e6;
   padding: 5px 0;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #cacaca;
 }
 
-/* line 96, ../scss/custom.scss */
+/* line 97, ../scss/custom.scss */
+footer,
 .bottom-bar {
-  border-top: 1px solid #555;
+  border-top: 1px solid #cacaca;
+  background-color: #e6e6e6;
+  padding: 5px 0;
 }
 
-/* line 99, ../scss/custom.scss */
-#block-sitebranding a {
-  padding: 5px;
+/* line 104, ../scss/custom.scss */
+.bottom-bar {
+  font-size: 80%;
+  text-align: center;
+}
+
+/* line 109, ../scss/custom.scss */
+.block-sitebranding img {
+  margin-right: 10px;
 }
