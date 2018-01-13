@@ -31,6 +31,10 @@ dependencies:
   - token
   - xmlsitemap
   - email_registration
+  - extlink
+  - linkit
+  - menu_trail_by_path
+  - redirect
 themes:
   - zurb_foundation
   - adminimal_theme
