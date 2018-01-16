@@ -1,5 +1,5 @@
 <?php
-
+  use Drupal\Core\Extension\ThemeHandlerInterface;
 /**
  * @file
  * Enables modules and site configuration for a standard site installation.
@@ -16,32 +16,32 @@ if (defined('MAINTENANCE_MODE') && MAINTENANCE_MODE == 'install') {
 function seed_form_install_configure_form_alter(&$form, $form_state) {
   $theme_handler = \Drupal::service('theme_handler');
   $theme_options = [];
-  foreach ($theme_handler->listInfo() as $theme_name => $theme_info) {
+  $theme_list_info = $theme_handler->listInfo();
+  foreach ($theme_list_info as $theme_name => $theme_info) {
     if (!empty($theme_info->status)) {
-      $theme_options[$theme_name] = $theme_info->info['name'];
+      if (!isset($theme_info->info['hidden']) || $theme_info->info['hidden'] != 1) {
+        $theme_options[$theme_name] = $theme_info->info['name'];
+      }
     }
   }
-  $form['default_theme'] = array(
+  $form['profile_settings'] = array(
+  '#type' => 'fieldset',
+  '#title' => t('Profile Settings'),
+  );
+  $form['profile_settings']['seed_default_theme'] = array(
+    '#prefix' => 'seed',
     '#title' => 'Select Theme',
     '#type' => 'select',
     '#options' => $theme_options,
     '#required' => TRUE,
   );
-  $form['actions']['submit']['#submit'][] = 'default_theme_submit';
+  $form['actions']['submit']['#submit']['seed'] = 'seed_install_profile_configure_form_submit';
 }
-
-function default_theme_submit(&$form, $form_state) {
+/**
+ * function to set selected theme as default theme.
+ */
+function seed_install_profile_configure_form_submit(&$form, $form_state) {
   // Set default theme.
-  $theme = $form_state->getValue('default_theme');
+  $theme = $form_state->getValue('seed_default_theme');
   \Drupal::configFactory()->getEditable('system.theme')->set('default', $theme)->save();
-  // Set admin theme.
-  $admin_theme = 'adminimal_theme';
-  \Drupal::configFactory()->getEditable('system.theme')->set('admin', $admin_theme)->save();
-
-  // Allow nodes to use admin theme.
-  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
-
-  // Set site front page.
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/home')->save(TRUE);
-
 }
