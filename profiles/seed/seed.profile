@@ -1,8 +1,8 @@
 <?php
-  use Drupal\Core\Extension\ThemeHandlerInterface;
+
 /**
  * @file
- * Enables modules and site configuration for a standard site installation.
+ * Enables modules and site configuration for Seed site platform.
  */
 
 // Include only when in install mode. MAINTENANCE_MODE is defined in
@@ -10,8 +10,9 @@
 if (defined('MAINTENANCE_MODE') && MAINTENANCE_MODE == 'install') {
   include_once 'seed.install.inc';
 }
+
 /**
- * hook_form_alter() to alter the site configuration form.
+ * Implements hook_form_alter().
  */
 function seed_form_install_configure_form_alter(&$form, $form_state) {
   $theme_handler = \Drupal::service('theme_handler');
@@ -24,21 +25,26 @@ function seed_form_install_configure_form_alter(&$form, $form_state) {
       }
     }
   }
-  $form['profile_settings'] = array(
-  '#type' => 'fieldset',
-  '#title' => t('Profile Settings'),
-  );
-  $form['profile_settings']['seed_default_theme'] = array(
-    '#prefix' => 'seed',
-    '#title' => 'Select Theme',
+
+  // Add profile settings group.
+  $form['profile_settings'] = [
+    '#type' => 'fieldset',
+    '#title' => t('Profile Settings'),
+  ];
+  // Default theme selection.
+  $form['profile_settings']['seed_default_theme'] = [
+    '#title' => 'Default theme',
     '#type' => 'select',
     '#options' => $theme_options,
     '#required' => TRUE,
-  );
-  $form['actions']['submit']['#submit']['seed'] = 'seed_install_profile_configure_form_submit';
+  ];
+
+  // Add custom submit handler to configure installation profile.
+  $form['actions']['submit']['#submit'][] = 'seed_install_profile_configure_form_submit';
 }
+
 /**
- * function to set selected theme as default theme.
+ * Submit handler to configure installation profile.
  */
 function seed_install_profile_configure_form_submit(&$form, $form_state) {
   // Set default theme.
