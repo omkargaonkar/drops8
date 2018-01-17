@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_profile
+label: 'Content Profile'
+description: ''
+attributes: {  }
+matchers:
+  b228cea8-3cf8-433f-8579-c9f50462bf6e:
+    uuid: b228cea8-3cf8-433f-8579-c9f50462bf6e
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: '[node:content-type]'
+      bundles:
+        page: page
+      group_by_bundle: false
+      include_unpublished: false
