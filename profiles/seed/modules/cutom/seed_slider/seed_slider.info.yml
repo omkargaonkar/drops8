@@ -1,5 +1,5 @@
-name: Seed_slider
-description: 'Manage sliding of reponsive images of site.'
+name: Seed Slider
+description: 'Provides responsive image slider for Seed platform.'
 type: module
 core: 8.x
 dependencies:

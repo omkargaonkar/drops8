@@ -12,9 +12,9 @@ dependencies:
     - slick_views
     - user
 id: slider_content
-label: 'Slider content'
+label: Slider
 module: views
-description: ''
+description: 'Displays image slider from entityqueue.'
 tag: ''
 base_table: node_field_data
 base_field: nid
