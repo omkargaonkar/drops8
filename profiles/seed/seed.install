@@ -44,7 +44,4 @@ function seed_install() {
 
   // Allow nodes to use admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
-
-  // Set site front page.
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/home')->save(TRUE);
 }

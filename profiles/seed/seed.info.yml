@@ -36,6 +36,8 @@ dependencies:
   - menu_trail_by_path
   - redirect
   - back_to_top
+  - menu_ui
+  - help
 themes:
   - zurb_foundation
   - adminimal_theme

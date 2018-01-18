@@ -15,15 +15,15 @@ if (defined('MAINTENANCE_MODE') && MAINTENANCE_MODE == 'install') {
  * Implements hook_form_alter().
  */
 function seed_form_install_configure_form_alter(&$form, $form_state) {
-  $theme_handler = \Drupal::service('theme_handler');
+  // Get all available themes.
+  $theme_list_info = \Drupal::service('theme_handler')->rebuildThemeData();
   $theme_options = [];
-  $theme_list_info = $theme_handler->listInfo();
   foreach ($theme_list_info as $theme_name => $theme_info) {
-    if (!empty($theme_info->status)) {
-      if (!isset($theme_info->info['hidden']) || $theme_info->info['hidden'] != 1) {
-        $theme_options[$theme_name] = $theme_info->info['name'];
-      }
+    // Skip hidden themes.
+    if (!empty($theme_info->info['hidden'])) {
+      continue;
     }
+    $theme_options[$theme_name] = $theme_info->info['name'];
   }
 
   // Add profile settings group.
@@ -47,7 +47,10 @@ function seed_form_install_configure_form_alter(&$form, $form_state) {
  * Submit handler to configure installation profile.
  */
 function seed_install_profile_configure_form_submit(&$form, $form_state) {
+  // Get selected theme.
+  $default_theme = $form_state->getValue('seed_default_theme');
+  // Install selected theme along with dependencies.
+  \Drupal::service('theme_installer')->install([$default_theme]);
   // Set default theme.
-  $theme = $form_state->getValue('seed_default_theme');
-  \Drupal::configFactory()->getEditable('system.theme')->set('default', $theme)->save();
+  \Drupal::service('theme_handler')->setDefault($default_theme);
 }
