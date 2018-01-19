@@ -1,0 +1,12 @@
+name: Seed_mails
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+  - editor
+  - entity_embed
+  - filter
+  - mailsystem
+  - mimemail
+version: 8.x-1.0
+description: 'Allows platform users to receive emails with HTML support.'

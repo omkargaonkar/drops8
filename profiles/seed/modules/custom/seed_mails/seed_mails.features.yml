@@ -1,0 +1,4 @@
+excluded:
+  - user.settings
+  - mailsystem.settings
+required: true
