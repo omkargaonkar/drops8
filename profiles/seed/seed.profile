@@ -38,16 +38,17 @@ function seed_form_install_configure_form_alter(&$form, $form_state) {
     '#required' => TRUE,
   ];
 
-  //list of modules
-    $module_list = array (
-      'seed_slider' => 'Seed slider',
-    );
-    //Select modules
-    $form['profile_settings']['seed_default_module'] = [
-      '#title' => 'Features',
-      '#type' => 'checkboxes',
-      '#options' => $module_list,
-     ];
+  // Feature list.
+  $features = [
+    'seed_slider' => 'Slider',
+  ];
+
+  $form['profile_settings']['seed_default_features'] = [
+    '#title' => 'Features',
+    '#description' => t('Select features for your platform.'),
+    '#type' => 'checkboxes',
+    '#options' => $features,
+  ];
   // Add custom submit handler to configure installation profile.
   $form['actions']['submit']['#submit'][] = 'seed_install_profile_configure_form_submit';
 }
@@ -62,16 +63,17 @@ function seed_install_profile_configure_form_submit(&$form, $form_state) {
   \Drupal::service('theme_installer')->install([$default_theme]);
   // Set default theme.
   \Drupal::service('theme_handler')->setDefault($default_theme);
-  //Enable default module
-  $modules = array();
-  $modules_selected = $form_state->getValue('seed_default_module');
-  foreach ($modules_selected as $mname => $modules_selected) {
-     if ($modules_selected) {
-       $modules[]  = $mname;
-     }
-  }
 
-  if (!empty($modules)) {
-   \Drupal::service('module_installer')->install($modules , TRUE);
+  // Get selected features.
+  $features = [];
+  $features_selected = $form_state->getValue('seed_default_features');
+  foreach ($features_selected as $name => $feature) {
+    if (!empty($feature)) {
+      $features[] = $name;
+    }
+  }
+  // Enable required features.
+  if (!empty($features)) {
+    \Drupal::service('module_installer')->install($features, TRUE);
   }
 }
