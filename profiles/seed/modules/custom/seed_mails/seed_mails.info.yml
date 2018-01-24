@@ -8,5 +8,6 @@ dependencies:
   - filter
   - mailsystem
   - mimemail
+  - smtp
 version: 8.x-1.0
 description: 'Allows platform users to receive emails with HTML support.'
