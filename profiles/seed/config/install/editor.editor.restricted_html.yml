@@ -5,6 +5,8 @@ dependencies:
     - filter.format.restricted_html
   module:
     - ckeditor
+_core:
+  default_config_hash: totbVnaHAwS2VX1nn__cwKkb5zbHpgVreewrbe7F3Dc
 format: restricted_html
 editor: ckeditor
 settings:
@@ -25,11 +27,19 @@ settings:
           name: Tools
           items:
             - Indent
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - Linkit
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: content_profile
 image_upload:
   status: true
   scheme: public
@@ -38,4 +48,3 @@ image_upload:
   max_dimensions:
     width: null
     height: null
-

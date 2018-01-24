@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: slider_image_narrow
+label: 'Slider Image-Narrow'
+effects:
+  cd0435a2-a7bb-4ec8-86ec-a7dcc1a28ae4:
+    uuid: cd0435a2-a7bb-4ec8-86ec-a7dcc1a28ae4
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      upscale: false

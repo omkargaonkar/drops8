@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Install, update and uninstall functions for the Seed installation profile.
@@ -6,7 +7,6 @@
 
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
-use Drupal\shortcut\Entity\Shortcut;
 
 /**
  * Implements hook_install().
@@ -32,11 +32,11 @@ function seed_install() {
   // menu links are valid.
   \Drupal::service('router.builder')->rebuildIfNeeded();
 
-  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access site-wide contact form'));
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access site-wide contact form'));
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['access site-wide contact form']);
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access site-wide contact form']);
 
   // Allow authenticated users to use shortcuts.
-  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access shortcuts'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access shortcuts']);
 
   // Set admin theme.
   $admin_theme = 'adminimal_theme';
@@ -44,11 +44,4 @@ function seed_install() {
 
   // Allow nodes to use admin theme.
   \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
-
-  // Set site front page.
-  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/home')->save(TRUE);
-
-  // Set default theme.
-  $default_theme = 'seed_zurb';
-  \Drupal::configFactory()->getEditable('system.theme')->set('default', $default_theme)->save();
 }

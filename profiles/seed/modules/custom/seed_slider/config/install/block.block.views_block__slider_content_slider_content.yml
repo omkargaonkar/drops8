@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider_content
+  module:
+    - views
+  theme:
+    - seed_zurb
+id: views_block__slider_content_slider_content
+theme: seed_zurb
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:slider_content-slider_content'
+settings:
+  id: 'views_block:slider_content-slider_content'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

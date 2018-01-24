@@ -1,0 +1,21 @@
+name: Seed Slider
+description: 'Provides responsive image slider for Seed platform.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - entityqueue
+  - field
+  - file
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - responsive_image
+  - slick
+  - slick_views
+  - text
+  - user
+  - views
+version: 8.x-1.0

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: mainmenu
+label: 'Main Menu'
+description: 'Site section custom links'
+locked: false

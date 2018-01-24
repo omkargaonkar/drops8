@@ -5,6 +5,8 @@ dependencies:
     - filter.format.basic_html
   module:
     - ckeditor
+_core:
+  default_config_hash: suKTUeJaXvzyhdQiH5TiSCDQNc0uaXBzItmnKMixbKE
 format: basic_html
 editor: ckeditor
 settings:
@@ -21,6 +23,7 @@ settings:
           items:
             - DrupalLink
             - DrupalUnlink
+            - Linkit
         -
           name: Lists
           items:
@@ -40,10 +43,12 @@ settings:
           items:
             - Source
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: content_profile
 image_upload:
   status: true
   scheme: public
@@ -52,5 +57,3 @@ image_upload:
   max_dimensions:
     width: null
     height: null
-
-

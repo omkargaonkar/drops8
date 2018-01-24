@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: slider_image_medium
+label: 'Slider Image-Medium'
+effects:
+  08a399dc-8c19-42f4-90d0-e283c6aecad1:
+    uuid: 08a399dc-8c19-42f4-90d0-e283c6aecad1
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: 1024
+      upscale: false

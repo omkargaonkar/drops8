@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.thumbnail
+  theme:
+    - seed_zurb
+id: seed_image
+label: 'Seed image'
+image_style_mappings:
+  -
+    breakpoint_id: seed_zurb.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+  -
+    breakpoint_id: seed_zurb.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: seed_zurb.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+breakpoint_group: seed_zurb
+fallback_image_style: thumbnail
+

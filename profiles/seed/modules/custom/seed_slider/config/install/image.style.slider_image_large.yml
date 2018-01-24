@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: slider_image_large
+label: 'Slider Image-Large'
+effects:
+  18a79af9-9c5f-4e81-9456-269fc5f63066:
+    uuid: 18a79af9-9c5f-4e81-9456-269fc5f63066
+    id: image_scale
+    weight: 1
+    data:
+      width: 2048
+      height: 2048
+      upscale: false

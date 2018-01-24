@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: MV3SNvmjxxNK6ZnuXLNvasS4oi2IQey9Oq8xM7w--ok
+  default_config_hash: 9cwc0VA5-WwLf02hsRyjn5S6A2T9ay-bZJ45JNWEWjE
 id: manager
 label: Manager
 weight: 2
@@ -21,9 +21,11 @@ permissions:
   - 'administer font entities'
   - 'administer google analytics'
   - 'administer image styles'
+  - 'administer linkit profiles'
   - 'administer menu'
   - 'administer meta tags'
   - 'administer nodes'
+  - 'administer redirects'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer themes'
@@ -37,12 +39,12 @@ permissions:
   - 'edit any page content'
   - 'edit own page content'
   - 'link to any page'
-  - 'use text format basic_html'
-  - 'use text format full_html'
-  - 'use text format restricted_html'
   - 'opt-in or out of google analytics tracking'
   - 'revert all revisions'
   - 'revert page revisions'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
